@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+}
+
+.heading {
+    font-size: 25px;
+    width: 50%;
+}
+
+#webcam {
+    border: dashed 2px black;
+    width: 350px;
+    height: 300px;
+}
+
+.name_plate {
+    width: 40%;
+}

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Face Recognition Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h4 class="btn btn-default heading">Face Recognition Web App</h4>
+            <br><br>
+
+            <p style="font-size: 22px;">Model is trained to identify the foolowing family members : </p><br>
+            <div class="btn btn-warning name_plate">Daughter</div><br><br>
+            <div class="btn btn-warning name_plate">Mother</div><br><br>
+            <div class="btn btn-warning name_plate">Father</div><br><br><br>
+
+            <label>Webcam View -</label><br>
+            <div id="webcam"></div>
+
+            <div id="result"></div>
+            <br><br>
+
+            <button id="take_snapshot" onclick="take_snapShot()" class="btn btn-warning">Take Snapshot</button><br><br>
+
+            <button id="check" onclick="check()" class="btn btn-warning">Check</button><br><br>
+
+            <p style="font-size: 22px;">Family Member :
+                <span id="fam_member"></span>
+            </p>
+
+            <p style="font-size: 22px;">Accuracy :
+                <span id="accuracy"></span>
+            </p>
+        </center>
+    </div>
+</body>
