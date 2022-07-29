@@ -9,7 +9,7 @@ Webcam.set({
     png_quality: 90,
 });
 
-camera = document.getElementById("webcam");
+camera = document.getElementById("camera");
 
 Webcam.attach("#camera");
 

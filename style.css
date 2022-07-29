@@ -7,7 +7,7 @@ body {
     width: 50%;
 }
 
-#webcam {
+#camera {
     border: dashed 2px black;
     width: 350px;
     height: 300px;
