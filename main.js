@@ -24,3 +24,18 @@ classifier = ml5.imageClassifier("https: //teachablemachine.withgoogle.com/model
 function modelLoaded() {
     console.log("Model is Loaded");
 }
+
+function check() {
+    img = document.getElementById("picture");
+    classifier.classify(img, gotResult);
+}
+
+function gotResult(error, result) {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log(result);
+        document.getElementById("fam_member").innerHTML = result[0].label;
+        document.getElementById("accuracy").innerHTML = result[0].confidence.toFixed(3);
+    }
+}
